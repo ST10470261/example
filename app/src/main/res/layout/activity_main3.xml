@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/img3"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/displaytxt3"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_marginTop="60dp"
+        android:text="It's Brunch time!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="764dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/myImageView1"
+            android:layout_width="188dp"
+            android:layout_height="233dp"
+            android:layout_marginTop="80dp"
+
+            android:src="@drawable/garlicbreadimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/caption1"
+            android:layout_width="156dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="15dp"
+            android:text="Garlic Bread"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toTopOf="@+id/myImageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myImageView1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/myImageView2"
+            android:layout_width="149dp"
+            android:layout_height="204dp"
+            android:layout_marginTop="92dp"
+
+            android:src="@drawable/strawberriescrossantimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.932"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/caption2"
+            android:layout_width="168dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="7dp"
+            android:text="Strawberries and Crossants"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/myImageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/caption1"
+            app:layout_constraintTop_toBottomOf="@+id/myImageView2"
+            app:layout_constraintVertical_bias="0.218" />
+
+        <ImageView
+            android:id="@+id/myImageView3"
+            android:layout_width="195dp"
+            android:layout_height="184dp"
+            android:layout_marginTop="368dp"
+            android:src="@drawable/chocolatestrawberriesimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/caption3"
+            android:layout_width="166dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="61dp"
+            android:text="Chocolate Strawberries"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/backBtn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/myImageView4"
+            android:layout_width="161dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="380dp"
+            android:src="@drawable/minitatertotcheeseburgersimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/caption4"
+            android:layout_width="156dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="47dp"
+            android:text="Mini Tatertot Cheese Burgers"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/proceedBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/caption3"
+            app:layout_constraintTop_toBottomOf="@+id/myImageView4"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="150dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="28dp"
+            android:backgroundTint="@color/Putty"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/proceedBtn"
+            android:layout_width="150dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/Putty"
+            android:text="Proceed"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.931"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
